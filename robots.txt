@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bhavyasj-portfolio.netlify.app/sitemap.xml
+
+# Directories
+Disallow: /private/
+Disallow: /admin/
+
+# Performance optimization
+Crawl-delay: 10

@@ -1,0 +1,19 @@
+{
+    "name": "bhavya-portfolio",
+    "version": "1.0.0",
+    "description": "Personal Portfolio Website",
+    "scripts": {
+        "minify:css": "cleancss -o stylesheets.min.css stylesheets.css",
+        "minify:js": "terser performance.js seo.js main.js -o scripts.min.js",
+        "optimize:images": "imagemin images/* --out-dir=images/optimized",
+        "build": "npm run minify:css && npm run minify:js && npm run optimize:images"
+    },
+    "keywords": ["portfolio", "personal website", "web development"],
+    "author": "Bhavya S J",
+    "license": "MIT",
+    "devDependencies": {
+        "clean-css-cli": "^5.6.2",
+        "terser": "^5.19.2",
+        "imagemin-cli": "^7.0.0"
+    }
+}
