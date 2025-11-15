@@ -1378,6 +1378,19 @@ body {
     font-size: 3rem;
     color: #9c27b0;
     margin-bottom: 20px;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    background: linear-gradient(135deg, rgba(156, 39, 176, 0.1) 0%, rgba(102, 126, 234, 0.1) 100%);
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.quick-link-card:hover i {
+    background: var(--primary-gradient);
+    color: white;
+    transform: scale(1.1) rotate(5deg);
 }
 
 .quick-link-card h3 {
@@ -1729,7 +1742,7 @@ body {
 
     /* Mobile Quick Links */
     .quick-links {
-        padding: 60px 0;
+        padding: 40px 20px;
     }
 
     .quick-links-grid {
@@ -1738,11 +1751,26 @@ body {
     }
 
     .quick-link-card {
-        padding: 35px 25px;
+        padding: 30px 20px;
+        margin-bottom: 15px;
     }
 
     .quick-link-card i {
         font-size: 2.5rem;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        margin-bottom: 15px;
+    }
+
+    .quick-link-card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 12px;
+    }
+
+    .quick-link-card p {
+        font-size: 0.95rem;
+        line-height: 1.6;
     }
 
     .quick-link-card h3 {
@@ -1961,6 +1989,9 @@ body {
 
     .quick-link-card i {
         font-size: 2.2rem;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
     }
 
     .quick-link-card h3 {
