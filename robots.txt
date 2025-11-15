@@ -8,7 +8,10 @@ Sitemap: https://bhavyasj-portfolio.netlify.app/sitemap.xml
 Disallow: /admin/
 Disallow: /private/
 Disallow: /*.json$
-Disallow: /*.xml$
+
+# Allow sitemap (important for SEO!)
+Allow: /sitemap.xml
+Allow: /robots.txt
 
 # Allow all pages
 Allow: /index.html
