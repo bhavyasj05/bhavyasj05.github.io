@@ -1,11 +1,21 @@
 User-agent: *
 Allow: /
 
+# Sitemap
 Sitemap: https://bhavyasj-portfolio.netlify.app/sitemap.xml
 
-# Directories
-Disallow: /private/
+# Disallow admin or private directories if any
 Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*.xml$
 
-# Performance optimization
-Crawl-delay: 10
+# Allow all pages
+Allow: /index.html
+Allow: /about.html
+Allow: /skills.html
+Allow: /projects.html
+Allow: /contact.html
+
+# Crawl-delay
+Crawl-delay: 1
